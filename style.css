@@ -33,14 +33,14 @@ button {
 
 #yesBtn {
   background-color: #4CAF50;
-  color: black; /* diubah dari hijau ke hitam */
+  color: black !important; /* Tambahkan !important */
 }
 
 #noBtn {
   background-color: #f44336;
-  color: black; /* diubah dari merah ke hitam */
-  position: relative;
+  color: black !important; /* Tambahkan !important */
 }
+
 
 .images {
   margin-top: 40px;
