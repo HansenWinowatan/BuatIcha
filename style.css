@@ -33,12 +33,12 @@ button {
 
 #yesBtn {
   background-color: #4CAF50;
-  color: green;
+  color: black; /* diubah dari hijau ke hitam */
 }
 
 #noBtn {
   background-color: #f44336;
-  color: red;
+  color: black; /* diubah dari merah ke hitam */
   position: relative;
 }
 
@@ -51,9 +51,8 @@ button {
 }
 
 .gambar {
-  width: 150px; /* Ukuran kecil */
+  width: 150px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-
