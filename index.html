@@ -4,75 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Untuk Ica</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .teks {
-      font-size: 18px;
-      margin-bottom: 30px;
-      color: #222;
-    }
-
-    .buttons {
-      margin-bottom: 30px;
-      position: relative;
-      height: 100px;
-    }
-
-    button {
-      padding: 12px 24px;
-      margin: 10px;
-      border: none;
-      color: white;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-      position: absolute;
-    }
-
-    #yes {
-      background-color: #4CAF50;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    #no {
-      background-color: #f44336;
-    }
-
-    #yes:hover {
-      background-color: #45a049;
-    }
-
-    #no:hover {
-      background-color: #d32f2f;
-    }
-
-    .gambar-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 40px;
-      flex-wrap: wrap;
-      margin-top: 50px;
-    }
-
-    .gambar {
-      width: 120px;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <p class="teks">
-      halooo icaaa, aku mau to the point aja
+    <p class="message">
+      halooo icaaa, aku mau to the point aja sama kamu,<br>
+      aku ngerasa sayang banget sama kamu, aku pengen menjadi bagian dari cerita di kehidupan kamu lagi,<br>
+      kamu mau ga jadi pacar aku lagi? kita mulai dari awal lagi semuanya
+    </p>
+    <div class="buttons">
+      <button id="yesBtn" onclick="location.href='yes.html'">mau</button>
+      <button id="noBtn">tidak mau</button>
+    </div>
+
+    <!-- Tambahan gambar -->
+    <div class="images">
+      <img src="gambar1.jpeg" alt="Gambar Lucu 1" class="gambar" />
+      <img src="gambar2.jpeg" alt="Gambar Lucu 2" class="gambar" />
+    </div>
+  </div>
+
+  <script>
+    const noBtn = document.getElementById("noBtn");
+
+    noBtn.addEventListener("mouseover", () => {
+      const x = Math.random() * (window.innerWidth - 100);
+      const y = Math.random() * (window.innerHeight - 100);
+      noBtn.style.position = "absolute";
+      noBtn.style.left = `${x}px`;
+      noBtn.style.top = `${y}px`;
+    });
+  </script>
+</body>
+</html>
