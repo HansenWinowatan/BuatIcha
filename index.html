@@ -4,36 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Untuk Ica</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="container">
-    <p class="message">
+    <p class="text">
       halooo icaaa, aku mau to the point aja sama kamu,<br>
-      aku ngerasa sayang banget sama kamu, aku pengen menjadi bagian dari cerita di kehidupan kamu lagi,<br>
+      aku ngerasa sayang banget sama kamu, aku pengen menjadi bagian dari<br>
+      cerita di kehidupan kamu lagi,<br>
       kamu mau ga jadi pacar aku lagi? kita mulai dari awal lagi semuanya
     </p>
     <div class="buttons">
-      <button id="yesBtn" onclick="location.href='yes.html'">mau</button>
-      <button id="noBtn">tidak mau</button>
+      <button id="yes" onclick="location.href='iya.html'">mau</button>
+      <button id="no">tidak mau</button>
     </div>
 
-    <!-- Tambahan gambar -->
     <div class="images">
-      <img src="gambar1.jpeg" alt="Gambar Lucu 1" class="gambar" />
-      <img src="gambar2.jpeg" alt="Gambar Lucu 2" class="gambar" />
+      <img src="gambar1.jpeg" alt="gambar1" class="gambar"/>
+      <img src="gambar2.jpeg" alt="gambar2" class="gambar"/>
     </div>
   </div>
 
   <script>
-    const noBtn = document.getElementById("noBtn");
-
-    noBtn.addEventListener("mouseover", () => {
-      const x = Math.random() * (window.innerWidth - 100);
-      const y = Math.random() * (window.innerHeight - 100);
-      noBtn.style.position = "absolute";
-      noBtn.style.left = `${x}px`;
-      noBtn.style.top = `${y}px`;
+    const btnNo = document.getElementById("no");
+    btnNo.addEventListener("mouseover", () => {
+      const i = Math.floor(Math.random() * window.innerWidth);
+      const j = Math.floor(Math.random() * window.innerHeight);
+      btnNo.style.position = "absolute";
+      btnNo.style.left = i + "px";
+      btnNo.style.top = j + "px";
     });
   </script>
 </body>
