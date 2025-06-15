@@ -1,23 +1,18 @@
 body {
-  background-color: white;
   font-family: Arial, sans-serif;
+  background-color: #fff;
   text-align: center;
-  margin: 0;
-  padding: 0;
+  padding: 40px 20px;
 }
 
-.container {
-  padding: 40px;
-}
-
-.text {
+.teks {
   font-size: 18px;
   margin-bottom: 30px;
-  line-height: 1.6;
+  color: #222;
 }
 
 .buttons {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 button {
@@ -28,7 +23,7 @@ button {
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 #yes {
@@ -37,20 +32,27 @@ button {
 
 #no {
   background-color: #f44336;
-  position: relative;
 }
 
-.images {
+#yes:hover {
+  background-color: #45a049;
+}
+
+#no:hover {
+  background-color: #d32f2f;
+}
+
+.gambar-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  gap: 40px;
   flex-wrap: wrap;
-  margin-top: 30px;
 }
 
 .gambar {
-  width: 150px;
+  width: 120px;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
