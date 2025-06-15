@@ -41,6 +41,12 @@ button {
   color: black !important; /* Tambahkan !important */
 }
 
+#yesBtn:hover,
+#noBtn:hover {
+  color: black !important;
+}
+
+
 
 .images {
   margin-top: 40px;
